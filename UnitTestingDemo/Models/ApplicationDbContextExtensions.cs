@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using UnitTestingDemo.Models.Sales;
-using UnitTestingDemo.Models.Sales;
 
 namespace UnitTestingDemo.Models
 {
@@ -16,7 +15,7 @@ namespace UnitTestingDemo.Models
 				context.Customers.Add(customerMoonFish);
 				context.SaveChanges();
 
-				var productGroupSoftware = new ProductGroup() { Name = "Software"};
+				var productGroupSoftware = new ProductGroup() { Name = "Software" };
 				var productGroupConsulting = new ProductGroup() { Name = "Consulting" };
 				context.ProductGroups.Add(productGroupSoftware);
 				context.ProductGroups.Add(productGroupConsulting);
@@ -39,6 +38,6 @@ namespace UnitTestingDemo.Models
 				context.SaveChanges();
 			}
 		}
-		
+
 	}
 }
